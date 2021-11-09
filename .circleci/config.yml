@@ -1,0 +1,11 @@
+orbs:
+  netsparker: netsparker/scan@1.0.4
+version: 2.1
+workflows:
+  example-workflow:
+    jobs:
+      - netsparker/scan:
+          api_url: https://online.acunetix360.com
+          scan_type: FullWithSelectedProfile
+          scanProfile_id: 7bb99552-42b1-4596-cc55-ad490244fc8a
+          website_id: d1d02bc9-f341-491f-6082-acec02b86fda
